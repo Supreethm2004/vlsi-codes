@@ -1,4 +1,4 @@
-`timescale 1ns/1ns 
+
 module multiplier_tb; 
     parameter m = 4, n = 4; 
     reg clk, rst; 
@@ -12,7 +12,7 @@ module multiplier_tb;
     end 
     initial begin 
         rst = 1; #2; rst = 0; 
-        A = 4'b1111; B = 4'b1111 
+        A = 4'b1111; B = 4'b1111; 
         #20; 
        rst = 1; #2; rst = 0; 
         A = 4'b0011; B = 4'b0011; 
